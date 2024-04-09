@@ -4,6 +4,11 @@
 https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 ```
 
+## Deployment
+```
+https://www.linkedin.com/pulse/deploying-multi-container-docker-compose-application-aws-oghli
+```
+
 ## docker-compose link
 
 ```
