@@ -1,0 +1,16 @@
+numpy
+pandas
+scikit-learn
+mlflow
+boto3
+pyyaml
+pymysql
+psycopg2-binary
+flask
+evidently
+botocore
+imbalanced-learn
+xgboost
+requests
+pyarrow
+# -e .

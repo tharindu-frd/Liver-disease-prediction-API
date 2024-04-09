@@ -1,0 +1,14 @@
+[2024-03-26T12:24:20.210+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline.import_training_data_from_s3 manual__2024-03-26T12:24:18.700858+00:00 [queued]>
+[2024-03-26T12:24:20.219+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline.import_training_data_from_s3 manual__2024-03-26T12:24:18.700858+00:00 [queued]>
+[2024-03-26T12:24:20.220+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-03-26T12:24:20.238+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): import_training_data_from_s3> on 2024-03-26 12:24:18.700858+00:00
+[2024-03-26T12:24:20.248+0000] {standard_task_runner.py:60} INFO - Started process 806 to run task
+[2024-03-26T12:24:20.250+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline', 'import_training_data_from_s3', 'manual__2024-03-26T12:24:18.700858+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpfnnzgwn4']
+[2024-03-26T12:24:20.252+0000] {standard_task_runner.py:88} INFO - Job 60: Subtask import_training_data_from_s3
+[2024-03-26T12:24:20.296+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline.import_training_data_from_s3 manual__2024-03-26T12:24:18.700858+00:00 [running]> on host b16b1960aaae
+[2024-03-26T12:24:20.363+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline' AIRFLOW_CTX_TASK_ID='import_training_data_from_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T12:24:18.700858+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T12:24:18.700858+00:00'
+[2024-03-26T12:24:24.352+0000] {logging_mixin.py:188} INFO - Downloaded and saved: Liver Patient Dataset.csv as artifacts/nonvalidatedData/Liver Patient Dataset.csv
+[2024-03-26T12:24:24.354+0000] {python.py:201} INFO - Done. Returned value was: artifacts/nonvalidatedData
+[2024-03-26T12:24:24.371+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=liver_disease_pipeline, task_id=import_training_data_from_s3, execution_date=20240326T122418, start_date=20240326T122420, end_date=20240326T122424
+[2024-03-26T12:24:24.397+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T12:24:24.414+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

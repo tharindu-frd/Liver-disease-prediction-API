@@ -1,0 +1,15 @@
+{
+  "NumberofColumns": 11,
+  "ColName": {
+    "age of the patient": "float64",
+    "gender of the patient": "object",
+    "total bilirubin": "float64",
+    "direct bilirubin": "float64",
+    "alkphos alkaline phosphotase": "float64",
+    "sgpt alamine aminotransferase": "float64",
+    "sgot aspartate aminotransferase": "float64",
+    "total protiens": "float64",
+    "alb albumin": "float64",
+    "a/g ratio albumin and globulin ratio": "float64"
+  }
+}

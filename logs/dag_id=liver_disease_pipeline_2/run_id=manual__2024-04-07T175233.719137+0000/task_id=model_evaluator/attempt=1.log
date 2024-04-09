@@ -1,0 +1,14 @@
+[2024-04-07T17:53:00.495+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.model_evaluator manual__2024-04-07T17:52:33.719137+00:00 [queued]>
+[2024-04-07T17:53:00.503+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.model_evaluator manual__2024-04-07T17:52:33.719137+00:00 [queued]>
+[2024-04-07T17:53:00.504+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-07T17:53:00.515+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): model_evaluator> on 2024-04-07 17:52:33.719137+00:00
+[2024-04-07T17:53:00.521+0000] {standard_task_runner.py:60} INFO - Started process 853 to run task
+[2024-04-07T17:53:00.523+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline_2', 'model_evaluator', 'manual__2024-04-07T17:52:33.719137+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp4yy0c2av']
+[2024-04-07T17:53:00.524+0000] {standard_task_runner.py:88} INFO - Job 201: Subtask model_evaluator
+[2024-04-07T17:53:00.560+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline_2.model_evaluator manual__2024-04-07T17:52:33.719137+00:00 [running]> on host 60be0e44a1a9
+[2024-04-07T17:53:00.633+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline_2' AIRFLOW_CTX_TASK_ID='model_evaluator' AIRFLOW_CTX_EXECUTION_DATE='2024-04-07T17:52:33.719137+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-07T17:52:33.719137+00:00'
+[2024-04-07T17:53:00.646+0000] {logging_mixin.py:188} INFO - Error finding model with lowest accuracy: Run 'None' not found
+[2024-04-07T17:53:00.647+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-07T17:53:00.737+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=liver_disease_pipeline_2, task_id=model_evaluator, execution_date=20240407T175233, start_date=20240407T175300, end_date=20240407T175300
+[2024-04-07T17:53:00.776+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-07T17:53:00.790+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,26 @@
+[2024-04-08T16:23:18.207+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.preprocessing manual__2024-04-08T16:23:01.900148+00:00 [queued]>
+[2024-04-08T16:23:18.220+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.preprocessing manual__2024-04-08T16:23:01.900148+00:00 [queued]>
+[2024-04-08T16:23:18.220+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-08T16:23:18.233+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): preprocessing> on 2024-04-08 16:23:01.900148+00:00
+[2024-04-08T16:23:18.240+0000] {standard_task_runner.py:60} INFO - Started process 601 to run task
+[2024-04-08T16:23:18.242+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline_2', 'preprocessing', 'manual__2024-04-08T16:23:01.900148+00:00', '--job-id', '215', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpe3bk6517']
+[2024-04-08T16:23:18.243+0000] {standard_task_runner.py:88} INFO - Job 215: Subtask preprocessing
+[2024-04-08T16:23:18.281+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline_2.preprocessing manual__2024-04-08T16:23:01.900148+00:00 [running]> on host 60be0e44a1a9
+[2024-04-08T16:23:18.356+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline_2' AIRFLOW_CTX_TASK_ID='preprocessing' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T16:23:01.900148+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-08T16:23:01.900148+00:00'
+[2024-04-08T16:23:18.733+0000] {python.py:201} INFO - Done. Returned value was:        Age of the patient  ...  Result
+0                    65.0  ...       1
+1                    62.0  ...       1
+2                    62.0  ...       1
+3                    58.0  ...       1
+4                    72.0  ...       1
+...                   ...  ...     ...
+29974                58.0  ...       1
+29976                28.0  ...       1
+30686                50.0  ...       1
+30688                54.0  ...       1
+30689                48.0  ...       1
+
+[16389 rows x 11 columns]
+[2024-04-08T16:23:18.825+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=liver_disease_pipeline_2, task_id=preprocessing, execution_date=20240408T162301, start_date=20240408T162318, end_date=20240408T162318
+[2024-04-08T16:23:19.018+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-08T16:23:19.044+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

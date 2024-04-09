@@ -1,0 +1,14 @@
+[2024-04-07T17:18:10.451+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.download_and_load_data manual__2024-04-07T17:17:47.795598+00:00 [queued]>
+[2024-04-07T17:18:10.460+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline_2.download_and_load_data manual__2024-04-07T17:17:47.795598+00:00 [queued]>
+[2024-04-07T17:18:10.460+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-04-07T17:18:10.474+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): download_and_load_data> on 2024-04-07 17:17:47.795598+00:00
+[2024-04-07T17:18:10.480+0000] {standard_task_runner.py:60} INFO - Started process 427 to run task
+[2024-04-07T17:18:10.482+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline_2', 'download_and_load_data', 'manual__2024-04-07T17:17:47.795598+00:00', '--job-id', '157', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpkv8hyx90']
+[2024-04-07T17:18:10.485+0000] {standard_task_runner.py:88} INFO - Job 157: Subtask download_and_load_data
+[2024-04-07T17:18:10.524+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline_2.download_and_load_data manual__2024-04-07T17:17:47.795598+00:00 [running]> on host 60be0e44a1a9
+[2024-04-07T17:18:10.589+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline_2' AIRFLOW_CTX_TASK_ID='download_and_load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-07T17:17:47.795598+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-07T17:17:47.795598+00:00'
+[2024-04-07T17:18:11.195+0000] {logging_mixin.py:188} INFO - Error loading data from S3: [Errno 2] No such file or directory: 'config.yaml'
+[2024-04-07T17:18:11.196+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-07T17:18:11.204+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=liver_disease_pipeline_2, task_id=download_and_load_data, execution_date=20240407T171747, start_date=20240407T171810, end_date=20240407T171811
+[2024-04-07T17:18:11.259+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-07T17:18:11.307+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

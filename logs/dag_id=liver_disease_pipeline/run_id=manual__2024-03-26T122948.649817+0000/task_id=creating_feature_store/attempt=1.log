@@ -1,0 +1,21 @@
+[2024-03-26T12:30:02.120+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline.creating_feature_store manual__2024-03-26T12:29:48.649817+00:00 [queued]>
+[2024-03-26T12:30:02.127+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline.creating_feature_store manual__2024-03-26T12:29:48.649817+00:00 [queued]>
+[2024-03-26T12:30:02.128+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-03-26T12:30:02.138+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): creating_feature_store> on 2024-03-26 12:29:48.649817+00:00
+[2024-03-26T12:30:02.143+0000] {standard_task_runner.py:60} INFO - Started process 1529 to run task
+[2024-03-26T12:30:02.145+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline', 'creating_feature_store', 'manual__2024-03-26T12:29:48.649817+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpyl1acan2']
+[2024-03-26T12:30:02.147+0000] {standard_task_runner.py:88} INFO - Job 81: Subtask creating_feature_store
+[2024-03-26T12:30:02.182+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline.creating_feature_store manual__2024-03-26T12:29:48.649817+00:00 [running]> on host b16b1960aaae
+[2024-03-26T12:30:02.247+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline' AIRFLOW_CTX_TASK_ID='creating_feature_store' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T12:29:48.649817+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T12:29:48.649817+00:00'
+[2024-03-26T12:30:06.251+0000] {logging_mixin.py:188} INFO - Uploaded X_train.csv to feature_store/X_train.csv.
+[2024-03-26T12:30:07.604+0000] {logging_mixin.py:188} INFO - Uploaded X_test.csv to feature_store/X_test.csv.
+[2024-03-26T12:30:08.124+0000] {logging_mixin.py:188} INFO - Uploaded y_train.csv to feature_store/y_train.csv.
+[2024-03-26T12:30:08.684+0000] {logging_mixin.py:188} INFO - Uploaded y_test.csv to feature_store/y_test.csv.
+[2024-03-26T12:30:08.685+0000] {logging_mixin.py:188} INFO - File X_train.csv removed successfully.
+[2024-03-26T12:30:08.686+0000] {logging_mixin.py:188} INFO - File X_test.csv removed successfully.
+[2024-03-26T12:30:08.687+0000] {logging_mixin.py:188} INFO - File y_train.csv removed successfully.
+[2024-03-26T12:30:08.688+0000] {logging_mixin.py:188} INFO - File y_test.csv removed successfully.
+[2024-03-26T12:30:08.690+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-26T12:30:08.700+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=liver_disease_pipeline, task_id=creating_feature_store, execution_date=20240326T122948, start_date=20240326T123002, end_date=20240326T123008
+[2024-03-26T12:30:08.732+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T12:30:08.753+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

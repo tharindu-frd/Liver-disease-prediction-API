@@ -1,0 +1,182 @@
+[2024-04-09T05:37:53.784+0000] {processor.py:161} INFO - Started process (PID=15066) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:37:53.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:37:53.801+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:37:53.800+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:37:58.055+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:37:58.049+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:37:58.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:37:58.082+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 4.302 seconds
+[2024-04-09T05:38:28.713+0000] {processor.py:161} INFO - Started process (PID=15289) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:38:28.714+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:38:28.715+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:38:28.715+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:38:30.190+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:38:30.185+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:38:30.193+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:38:30.209+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 1.980 seconds
+[2024-04-09T05:39:00.337+0000] {processor.py:161} INFO - Started process (PID=15343) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:00.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:39:00.340+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:39:00.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:02.180+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:39:02.174+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:39:02.182+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:02.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 1.862 seconds
+[2024-04-09T05:39:32.261+0000] {processor.py:161} INFO - Started process (PID=15391) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:32.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:39:32.263+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:39:32.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:34.271+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:39:34.265+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:39:34.273+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:39:34.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.031 seconds
+[2024-04-09T05:40:04.621+0000] {processor.py:161} INFO - Started process (PID=15439) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:04.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:40:04.624+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:40:04.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:06.732+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:40:06.726+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:40:06.735+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:06.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.136 seconds
+[2024-04-09T05:40:36.896+0000] {processor.py:161} INFO - Started process (PID=15487) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:36.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:40:36.899+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:40:36.899+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:39.018+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:40:39.012+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:40:39.020+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:40:39.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.144 seconds
+[2024-04-09T05:41:09.185+0000] {processor.py:161} INFO - Started process (PID=15535) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:09.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:41:09.188+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:41:09.187+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:11.398+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:41:11.392+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:41:11.401+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:11.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.235 seconds
+[2024-04-09T05:41:42.448+0000] {processor.py:161} INFO - Started process (PID=15583) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:42.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:41:42.451+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:41:42.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:44.626+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:41:44.621+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:41:44.629+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:41:44.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.200 seconds
+[2024-04-09T05:42:14.868+0000] {processor.py:161} INFO - Started process (PID=15631) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:14.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:42:14.871+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:42:14.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:17.099+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:42:17.092+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:42:17.101+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:17.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.253 seconds
+[2024-04-09T05:42:47.283+0000] {processor.py:161} INFO - Started process (PID=15679) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:47.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:42:47.286+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:42:47.285+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:49.532+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:42:49.526+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:42:49.534+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:42:49.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.272 seconds
+[2024-04-09T05:50:42.411+0000] {processor.py:161} INFO - Started process (PID=15742) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:50:42.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:50:42.416+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:50:42.415+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:50:46.024+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:50:46.019+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:50:46.026+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:50:46.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 3.649 seconds
+[2024-04-09T05:51:16.634+0000] {processor.py:161} INFO - Started process (PID=15808) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:16.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:51:16.635+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:51:16.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:18.631+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:51:18.626+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:51:18.633+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:18.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.210 seconds
+[2024-04-09T05:51:49.387+0000] {processor.py:161} INFO - Started process (PID=15856) to work on /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:49.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/evidently.py for tasks to queue
+[2024-04-09T05:51:49.389+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:51:49.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:51.384+0000] {logging_mixin.py:188} INFO - [2024-04-09T05:51:51.379+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/evidently.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/evidently.py", line 10, in <module>
+    from evidently import ColumnMapping, Report
+ImportError: cannot import name 'Report' from 'evidently' (/home/airflow/.local/lib/python3.8/site-packages/evidently/__init__.py)
+[2024-04-09T05:51:51.386+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/evidently.py
+[2024-04-09T05:51:51.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/evidently.py took 2.014 seconds

@@ -1,0 +1,25 @@
+[2024-03-26T12:28:35.829+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: liver_disease_pipeline.validate_data manual__2024-03-26T12:28:24.455820+00:00 [queued]>
+[2024-03-26T12:28:35.840+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: liver_disease_pipeline.validate_data manual__2024-03-26T12:28:24.455820+00:00 [queued]>
+[2024-03-26T12:28:35.841+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-03-26T12:28:35.856+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): validate_data> on 2024-03-26 12:28:24.455820+00:00
+[2024-03-26T12:28:35.862+0000] {standard_task_runner.py:60} INFO - Started process 1312 to run task
+[2024-03-26T12:28:35.865+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'liver_disease_pipeline', 'validate_data', 'manual__2024-03-26T12:28:24.455820+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpk3mivldf']
+[2024-03-26T12:28:35.868+0000] {standard_task_runner.py:88} INFO - Job 73: Subtask validate_data
+[2024-03-26T12:28:35.931+0000] {task_command.py:423} INFO - Running <TaskInstance: liver_disease_pipeline.validate_data manual__2024-03-26T12:28:24.455820+00:00 [running]> on host b16b1960aaae
+[2024-03-26T12:28:36.013+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@localhost.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='liver_disease_pipeline' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T12:28:24.455820+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T12:28:24.455820+00:00'
+[2024-03-26T12:28:36.021+0000] {logging_mixin.py:188} INFO - Error validating CSV files: [Errno 2] No such file or directory: 'schema_training.json'
+[2024-03-26T12:28:36.022+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trainingValidation.py", line 82, in validate_data
+    with open('schema_training.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'schema_training.json'
+[2024-03-26T12:28:36.034+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=liver_disease_pipeline, task_id=validate_data, execution_date=20240326T122824, start_date=20240326T122835, end_date=20240326T122836
+[2024-03-26T12:28:36.047+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 73 for task validate_data ([Errno 2] No such file or directory: 'schema_training.json'; 1312)
+[2024-03-26T12:28:36.078+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-26T12:28:36.126+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
